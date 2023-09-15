@@ -1,42 +1,3 @@
-// ganti gambar details
-
-function changeImage(element) {
-  const mainImage = document.getElementById("mainImage");
-  mainImage.src = element.src;
-}
-
-
-// Menu details
-const menuLink = document.getElementById("menu");
-const aboutLink = document.getElementById("about-resto");
-const couponsLink = document.getElementById("coupons");
-
-const menuDiv = document.querySelector(".menu");
-const aboutDiv = document.querySelector(".about");
-const couponsDiv = document.querySelector(".coupons");
-
-menuLink.addEventListener("click", function (event) {
-    event.preventDefault();
-    menuDiv.classList.remove("hidden");
-    aboutDiv.classList.add("hidden");
-    couponsDiv.classList.add("hidden");
-});
-
-aboutLink.addEventListener("click", function (event) {
-    event.preventDefault();
-    menuDiv.classList.add("hidden");
-    aboutDiv.classList.remove("hidden");
-    couponsDiv.classList.add("hidden");
-});
-
-couponsLink.addEventListener("click", function (event) {
-    event.preventDefault();
-    menuDiv.classList.add("hidden");
-    aboutDiv.classList.add("hidden");
-    couponsDiv.classList.remove("hidden");
-});
-// Menu details
-
 
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
@@ -97,6 +58,7 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
 const swiper2 = new Swiper(".swiper2", {
   // Optional parameters
   direction: "horizontal",
@@ -113,26 +75,5 @@ const swiper2 = new Swiper(".swiper2", {
       slidesPerView: 4,
       spaceBetween: 10,
     },
-  },
-});
-const swiper3 = new Swiper(".swiper3", {
-  // Optional parameters
-  direction: "horizontal",
-  slidesPerView: 2,
-  spaceBetween: 10,
-  centerSlide: true,
-
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
-  },
-
-  thumbs: {
-    swiper: swiper,
   },
 });

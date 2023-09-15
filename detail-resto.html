@@ -172,6 +172,47 @@
 
   <script>
     feather.replace();
+
+
+
+    // ganti gambar details
+
+function changeImage(element) {
+  const mainImage = document.getElementById("mainImage");
+  mainImage.src = element.src;
+}
+
+
+// Menu details
+const menuLink = document.getElementById("menu");
+const aboutLink = document.getElementById("about-resto");
+const couponsLink = document.getElementById("coupons");
+
+const menuDiv = document.querySelector(".menu");
+const aboutDiv = document.querySelector(".about");
+const couponsDiv = document.querySelector(".coupons");
+
+menuLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    menuDiv.classList.remove("hidden");
+    aboutDiv.classList.add("hidden");
+    couponsDiv.classList.add("hidden");
+});
+
+aboutLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    menuDiv.classList.add("hidden");
+    aboutDiv.classList.remove("hidden");
+    couponsDiv.classList.add("hidden");
+});
+
+couponsLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    menuDiv.classList.add("hidden");
+    aboutDiv.classList.add("hidden");
+    couponsDiv.classList.remove("hidden");
+});
+// Menu details
   </script>
   <script src="./dist/js/script.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
