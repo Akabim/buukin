@@ -77,3 +77,20 @@ const swiper2 = new Swiper(".swiper2", {
     },
   },
 });
+const swiper3 = new Swiper(".swiper3", {
+  // Optional parameters
+  direction: "horizontal",
+  spaceBetween: 10,
+  slidesPerView: 2,
+  centerSlide: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+});
