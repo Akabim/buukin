@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="id" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,59 +15,68 @@
   <body class="scroll-smooth">
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 shadow-md">
       <div class="container mx-auto">
-        <div class="flex items-center justify-between relative py-3 px-4">
-          <div class="px-4 flex">
-            <!-- <a href="#home" class="font-bold text-lg text-primary block py-6">Rizzcookies.</a> -->
-            <img src="./dist/img/logo.png" width="126px" height="29px" class="mt-1 lg:scale-110" alt="" />
+          <div class="flex items-center justify-between relative py-3 px-4">
+              <div class="px-4 flex">
+                  <a href="./index.html" class="font-bold text-lg text-primary block py-2"> <img src="./dist/img/logo.png"
+                          width="126px" height="29px" class="mt-1 lg:scale-110" alt="" />
+                  </a>
+              </div>
+              <div class="flex items-center px-4">
+                  <button id="hamburger" name="hamburger" type="button"
+                      class="scale-75 lg:hidden block absolute right-4">
+                      <span
+                          class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
+                      <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                      <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                  </button>
+                  <nav id="nav-menu"
+                      class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full lg:right-1/2 lg:top-1/2 right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                      <ul class="block lg:flex justify-center">
+                          <li class="group lg:text-center">
+                              <a href="./index.html"
+                                  class="text-primary lg:text-primary py-2 px-8 group-hover:underline underline-offset-8 group-hover:text-primary group-hover:font-semibold flex transition ease-in-out">Beranda</a>
+                          </li>
+                          <li class="group lg:text-center">
+                              <a href="./kategori.html"
+                                  class="text-primary lg:text-primary py-2 px-8 group-hover:underline underline-offset-8 group-hover:text-primary group-hover:font-semibold flex transition ease-in-out">Kategori</a>
+                          </li>
+                          <li class="group lg:text-center">
+                              <a href="./favorite.html"
+                                  class="text-primary lg:text-primary py-2 px-8 group-hover:underline underline-offset-8 group-hover:text-primary group-hover:font-semibold flex transition ease-in-out">Favorit</a>
+                          </li>
+                          <li id="account-text" class="group lg:text-center">
+                              <a href="#contact"
+                                  class="lg:hidden text-primary lg:bg-primary bg-transparent rounded-full py-2 px-8 mx-auto lg:hover:border-primary lg:hover:border-2 lg:hover:bg-transparent lg:hover:text-primary group-hover:font-semibold flex">Account</a>
+                          </li>
+                      </ul>
+                  </nav>
+
+                  <a href="">
+                      <i class="lg:ml-8 lg:mr-0 mr-4 lg:w-6 lg:h-6 inline-flex text-primary w-5 h-5"
+                          data-feather="bell" id=""></i>
+                  </a>
+                  <a href="./cart.html" target="_blank">
+                      <svg class="lg:ml-8 lg:mr-9 mr-7 lg:w-6 lg:h-6 inline-flex text-primary w-5 h-5"
+                          aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="1.4"
+                              d="M6 1v4a1 1 0 0 1-1 1H1m8-2h3M9 7h3m-4 3v6m-4-3h8m3-11v16a.969.969 0 0 1-.932 1H1.934A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.829 1h8.239A.969.969 0 0 1 15 2ZM4 10h8v6H4v-6Z" />
+                      </svg>
+                      </i></a>
+                  <button class="lg:border-2 lg:border-primary lg:rounded-full">
+                      <i id="account-icons" name="user"
+                          class="hidden lg:w-6 lg:h-6 lg:inline-flex text-primary w-5 h-5" data-feather="user"></i>
+                  </button>
+              </div>
           </div>
-          <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="scale-75 lg:hidden block absolute right-4">
-              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-            </button>
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full lg:right-1/2 lg:top-1/2 right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-              <ul class="block lg:flex justify-center">
-                <li class="group lg:text-center">
-                  <a href="#home" class="text-primary lg:text-primary py-2 px-8 group-hover:underline underline-offset-8 group-hover:text-primary group-hover:font-semibold flex transition ease-in-out">Beranda</a>
-                </li>
-                <li class="group lg:text-center">
-                  <a href="#about" class="text-primary lg:text-primary py-2 px-8 group-hover:underline underline-offset-8 group-hover:text-primary group-hover:font-semibold flex transition ease-in-out">Kategori</a>
-                </li>
-                <li class="group lg:text-center">
-                  <a href="#cotd" class="text-primary lg:text-primary py-2 px-8 group-hover:underline underline-offset-8 group-hover:text-primary group-hover:font-semibold flex transition ease-in-out">Favorit</a>
-                </li>
-                <li id="account-text" class="group lg:text-center">
-                  <a
-                    href="#contact"
-                    class="lg:hidden text-primary lg:bg-primary bg-transparent rounded-full py-2 px-8 mx-auto lg:hover:border-primary lg:hover:border-2 lg:hover:bg-transparent lg:hover:text-primary group-hover:font-semibold flex"
-                    >Account</a
-                  >
-                </li>
-              </ul>
-            </nav>
-             
-            <a href="">
-              <i class="lg:ml-8 lg:mr-0 mr-4 lg:w-6 lg:h-6 inline-flex text-primary w-5 h-5" data-feather="bell" id=""></i>
-            </a>
-            <a href="./cart.html" target="_blank">
-              <svg class="lg:ml-8 lg:mr-9 mr-7 lg:w-6 lg:h-6 inline-flex text-primary w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M6 1v4a1 1 0 0 1-1 1H1m8-2h3M9 7h3m-4 3v6m-4-3h8m3-11v16a.969.969 0 0 1-.932 1H1.934A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.829 1h8.239A.969.969 0 0 1 15 2ZM4 10h8v6H4v-6Z"/>
-            </svg>
-            </i></a>
-            <button class="lg:border-2 lg:border-primary lg:rounded-full">
-              <i id="account-icons" name="user" class="hidden lg:w-6 lg:h-6 lg:inline-flex text-primary w-5 h-5" data-feather="user"></i>
-            </button>
-          </div>
-        </div>
       </div>
-    </header>
+  </header>
     <!-- Banner -->
     <section class="pt-28 lg:pt-36 pb-12 w-full bg-white">
       <div class="container mx-auto">
         <div class="flex flex-wrap">
-          <div class="w-full self-center justify-center px-4">
-            <div class=" flex-wrap inline-flex sticky">
+          <div class="w-full self-center justify-center px-4 lg:px-12">
+            <div class="flex-wrap inline-flex sticky">
               <div class="search-form bg-white rounded-full flex justify-center items-center border border-primary ">
               <input class="py-2.5 lg:w-[975px] pr-4 pl-4 bg-white rounded-full focus:outline-none" type="text" name="search" id="searchbar" onkeyup="search_resto()" placeholder="Cari disini..." />
               <label>
@@ -111,7 +120,7 @@
     <section class="pt-8 pb-20">
       <div class="container mx-auto">
         <div class="flex flex-wrap">
-          <div class="w-full self-center justify-center px-4">
+          <div class="w-full self-center justify-center px-4 lg:px-12">
             <div class="flex flex-wrap">
               <div class="w-full lg:w-1/2 justify-start">
                 <h1 class="text-2xl font-bold text-black">Rekomendasi Untukmu!</h1>
@@ -228,7 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-7 w-full self-center justify-center px-4">
+          <div class="mt-7 w-full self-center justify-center px-4 lg:px-12">
             <div class="flex flex-wrap">
               <div class="w-full lg:w-1/2 justify-start">
                 <h1 class="text-2xl font-bold text-black">Sedang Tren!</h1>
@@ -344,7 +353,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-7 w-full self-center justify-center px-4">
+          <div class="mt-7 w-full self-center justify-center px-4 lg:px-12">
             <div class="flex flex-wrap">
               <div class="w-full lg:w-1/2 justify-start">
                 <h1 class="text-2xl font-bold text-black">Restoran Baru!</h1>
@@ -460,7 +469,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-7 w-full self-center justify-center px-4">
+          <div class="mt-7 w-full self-center justify-center px-4 lg:px-12">
             <div class="flex flex-wrap">
               <div class="w-full lg:w-1/2 justify-start">
                 <h1 class="text-2xl font-bold text-black">Lagi Promo!</h1>

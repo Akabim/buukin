@@ -94,3 +94,21 @@ const swiper3 = new Swiper(".swiper3", {
     },
   },
 });
+
+const swiper4 = new Swiper('.swiper4', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 15,
+  centerSlide: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 7,
+      spaceBetween: 10,
+    },
+  },
+});
